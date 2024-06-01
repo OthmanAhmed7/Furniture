@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@babel/core": "^7.24.6",
+    "@babel/preset-env": "^7.24.6",
+    "@babel/preset-react": "^7.24.6",
+    "@babel/preset-typescript": "^7.24.6",
+    "@sanity/client": "^6.19.1",
+    "@tanstack/react-query": "^5.40.0",
+    "babel": "^6.23.0",
+    "next": "^14.2.3",
+    "react-icons": "^5.2.1"
+  }
+}
