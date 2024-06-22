@@ -1,6 +1,6 @@
 "use client";
 
-import { useContext, useState } from "react";
+import { useContext, useState, Suspense } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 import Card from "@/components/product/Card";
 import NotificationContext from "@/context/NotificationContext";
@@ -167,4 +167,10 @@ const Shop = () => {
   );
 };
 
-export default Shop;
+const ShopPage = () => (
+  <Suspense fallback={<Loading />}>
+    <Shop />
+  </Suspense>
+);
+
+export default ShopPage;

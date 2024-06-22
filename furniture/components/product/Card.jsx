@@ -20,8 +20,7 @@ const Card = ({ product, showNotify }) => {
         )}
 
         <Link
-          href={`/product/${product._id}`}
-          onClick={() => window.scrollTo(0, 0)}
+          href="#"
           className="relative rounded-tr-[1rem] rounded-tl-[1rem] w-fit group"
         >
           <div className="absolute top-0 left-0 opacity-0 bg-neutral-900 w-[100%] h-[100%] transition duration-300 ease-in z-[10] group-hover:opacity-40 rounded-tl-[.8rem] rounded-tr-[.8rem]"></div>

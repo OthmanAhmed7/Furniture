@@ -20,6 +20,7 @@ const Header = () => {
   const [navClick, setNavClick] = useState(false);
   const [overlay, setOverlay] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [activeLink, setActiveLink] = useState("home");
 
   const handleToggleSearch = () => {
     setToggleSearch((prevToggleSearch) => !prevToggleSearch);
@@ -61,13 +62,18 @@ const Header = () => {
     <>
       <Notification />
       <section className="w-full shadow-2xl fixed top-0 z-[500] bg-neutral-100 transition duration-300 ease-in-out">
-        <div className={`overlay ${overlay ? "show-overlay" : ""}`}></div>
+        <div
+          className={`overlay ${overlay ? "show-overlay" : ""}`}
+          onClick={handleNavClose}
+        ></div>
         {toggleSearch && (
-          <div className="py-7 px-8 flex max-w-[1300px] mx-auto">
+          <div className="px-8 flex max-w-[1300px] mx-auto">
             <form
               onSubmit={handleSearch}
-              className={`search-input ${
-                toggleSearch ? "showSearchInput" : ""
+              className={`max-w-[800px] mx-auto opacity-0 max-h-0 ${
+                toggleSearch
+                  ? "flex items-center justify-center pt-[1rem] opacity-100 max-h-[50px]"
+                  : ""
               }`}
             >
               <input
@@ -85,27 +91,82 @@ const Header = () => {
         )}
         <div className="py-7 px-[16px] flex justify-between items-center max-w-[1350px] mx-auto">
           <div>
-            <h1 className="text-[1.7rem] font-bold text-primary-400">
+            <h1 className="text-[1.7rem] font-[700] text-primary-400">
               <Link href="/">Furniture</Link>
             </h1>
           </div>
 
           <div className="hidden lg:block">
-            <ul className="flex gap-10 text-lg">
-              <li className="hover:text-primary-400">
-                <Link href="/">Home</Link>
+            <ul className="flex gap-10 text-lg font-[600]">
+              <li
+                className={`hover:text-primary-400 ${
+                  activeLink === "home" ? "text-primary-400" : ""
+                }`}
+              >
+                <Link
+                  href="/"
+                  onClick={() => {
+                    setActiveLink("home");
+                  }}
+                >
+                  Home
+                </Link>
               </li>
-              <li className="hover:text-primary-400">
-                <Link href="/shop">Shop</Link>
+              <li
+                className={`hover:text-primary-400 ${
+                  activeLink === "shop" ? "text-primary-400" : ""
+                }`}
+              >
+                <Link
+                  href="/shop"
+                  onClick={() => {
+                    setActiveLink("shop");
+                  }}
+                >
+                  Shop
+                </Link>
               </li>
-              <li className="hover:text-primary-400">
-                <Link href="/about">About</Link>
+              <li
+                className={`hover:text-primary-400 ${
+                  activeLink === "about" ? "text-primary-400" : ""
+                }`}
+              >
+                <Link
+                  href="/about"
+                  onClick={() => {
+                    setActiveLink("about");
+                  }}
+                >
+                  About
+                </Link>
               </li>
-              <li className="hover:text-primary-400">
-                <Link href="/blog">Blog</Link>
+              <li
+                className={`hover:text-primary-400 ${
+                  activeLink === "blog" ? "text-primary-400" : ""
+                }`}
+              >
+                <Link
+                  href="/blog"
+                  onClick={() => {
+                    setActiveLink("blog");
+                  }}
+                >
+                  Blog
+                </Link>
               </li>
-              <li className="hover:text-primary-400">
-                <Link href="/contact">Contact</Link>
+              <li
+                className={`hover:text-primary-400 ${
+                  activeLink === "contact" ? "text-primary-400" : ""
+                }`}
+              >
+                <Link
+                  href="/contact"
+                  onClick={() => {
+                    setActiveLink("contact");
+                  }}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -159,21 +220,76 @@ const Header = () => {
 
         {navClick && (
           <div>
-            <ul className="fixed right-0 top-0 pt-[5rem] pl-[1rem] gap-[1rem] flex flex-col w-[40%] z-[190] h-[100vh] bg-neutral-100">
-              <li className="hover:text-primary-400">
-                <Link href="/">Home</Link>
+            <ul className="fixed right-0 top-0 pt-[5rem] font-[600] pl-[1rem] gap-[1rem] flex flex-col w-[40%] z-[190] h-[100vh] bg-neutral-100">
+              <li
+                className={`hover:text-primary-400 ${
+                  activeLink === "home" ? "text-primary-400" : ""
+                }`}
+              >
+                <Link
+                  href="/"
+                  onClick={() => {
+                    setActiveLink("home");
+                  }}
+                >
+                  Home
+                </Link>
               </li>
-              <li className="hover:text-primary-400">
-                <Link href="/shop">Shop</Link>
+              <li
+                className={`hover:text-primary-400 ${
+                  activeLink === "shop" ? "text-primary-400" : ""
+                }`}
+              >
+                <Link
+                  href="/shop"
+                  onClick={() => {
+                    setActiveLink("shop");
+                  }}
+                >
+                  Shop
+                </Link>
               </li>
-              <li className="hover:text-primary-400">
-                <Link href="/about">About</Link>
+              <li
+                className={`hover:text-primary-400 ${
+                  activeLink === "about" ? "text-primary-400" : ""
+                }`}
+              >
+                <Link
+                  href="/about"
+                  onClick={() => {
+                    setActiveLink("about");
+                  }}
+                >
+                  About
+                </Link>
               </li>
-              <li className="hover:text-primary-400">
-                <Link href="/blog">Blog</Link>
+              <li
+                className={`hover:text-primary-400 ${
+                  activeLink === "blog" ? "text-primary-400" : ""
+                }`}
+              >
+                <Link
+                  href="/blog"
+                  onClick={() => {
+                    setActiveLink("blog");
+                  }}
+                >
+                  Blog
+                </Link>
               </li>
-              <li className="hover:text-primary-400">
-                <Link href="/contact">Contact</Link>
+              <li
+                className={`hover:text-primary-400 ${
+                  activeLink === "contact" ? "text-primary-400" : ""
+                }`}
+              >
+                <Link
+                  href="/contact"
+                  onClick={() => {
+                    setActiveLink("contact");
+                  }}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>

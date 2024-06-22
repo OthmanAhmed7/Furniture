@@ -13,6 +13,7 @@ const nextConfig = {
       "www.hotelsmedellin.net",
       "images-eu.ssl-images-amazon.com",
       "img.freepik.com",
+      "i.etsystatic.com",
     ],
   },
 };

@@ -8,7 +8,7 @@ import Category from "@/components/sections/Category";
 import FeaturedProducts from "@/components/product/FeaturedProducts";
 import Trending from "@/components/sections/Trending";
 import Event from "@/components/sections/Event";
-import Newsletter from "@/components/sections/NewsLetter";
+import Newsletter from "../components/sections/Newsletter";
 
 export default function Home() {
   const { showNotify } = useContext(NotificationContext);

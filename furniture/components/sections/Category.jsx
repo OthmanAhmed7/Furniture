@@ -24,7 +24,7 @@ const Category = () => {
       <section className="pt-[5rem]">
         <div className="max-w-[1300px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:grid-rows-2 grid-rows-4 gap-[1rem]">
           <Link
-            href="/category/table"
+            href="#"
             className="relative overflow-hidden lg:col-span-2 lg:row-span-2 category-hover"
           >
             <div className="category-overlay"></div>
@@ -41,7 +41,7 @@ const Category = () => {
           </Link>
 
           <Link
-            href="/category/chair"
+            href="#"
             className="relative overflow-hidden lg:row-span-2 lg:col-start-3 lg:col-end-4 category-hover"
           >
             <div className="category-overlay"></div>
@@ -58,7 +58,7 @@ const Category = () => {
           </Link>
 
           <Link
-            href="/category/bed"
+            href="#"
             className="relative overflow-hidden lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-2 category-hover"
           >
             <div className="category-overlay"></div>
@@ -75,7 +75,7 @@ const Category = () => {
           </Link>
 
           <Link
-            href="/category/couch"
+            href="#"
             className="relative overflow-hidden lg:col-start-4 lg:col-end-5 lg:row-start-2 lg:row-end-3 category-hover"
           >
             <div className="category-overlay"></div>
