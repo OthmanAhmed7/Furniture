@@ -83,9 +83,12 @@ const Header = () => {
                 className="border px-4 border-black outline-none md:w-[30rem] w-[15rem] py-2 rounded-l-full"
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
-              <div className="px-3 py-2 bg-black border border-black rounded-r-full">
+              <button
+                aria-label="search"
+                className="px-3 py-2 bg-black border border-black rounded-r-full"
+              >
                 <IoSearch className="w-6 h-6 text-white" />
-              </div>
+              </button>
             </form>
           </div>
         )}
@@ -173,6 +176,7 @@ const Header = () => {
 
           <div className="flex items-center justify-between relative xs:ml-[0.5rem]">
             <button
+              aria-label="search"
               className="mr-4 grid cursor-pointer xs:mx-[0.5rem] lg:mr-[1rem] lg:ml-0"
               onClick={handleToggleSearch}
             >
@@ -180,6 +184,7 @@ const Header = () => {
             </button>
 
             <button
+              aria-label="cart"
               className="grid cursor-pointer xs:mx-[0.5rem] lg:mr-[1rem] lg:ml-0 relative"
               onClick={handleCartClick}
             >
@@ -192,6 +197,7 @@ const Header = () => {
             </button>
 
             <button
+              aria-label="open and close the navigation menu"
               className="grid cursor-pointer lg:hidden"
               onClick={navClick ? handleNavClose : handleNavClick}
             >
