@@ -6,7 +6,7 @@ const page = () => {
   return (
     <section className="contact bg-neutral-300">
       <div className="bg-img">
-        <div className="absolute top-0 left-0 opacity-0 bg-neutral-900 w-[100%] h-[100%] transition duration-300 ease-in z-[10]"></div>
+        <div className="absolute top-0 left-0 opacity-30 bg-neutral-900 w-[100%] h-[100%] transition duration-300 ease-in z-[10]"></div>
         <h1 className="absolute top-[55%] left-[50%] translate-x-[-50%] translate-y-[-55%] flex items-center justify-center text-neutral-100 uppercase text-[3.5rem] w-[100%] tracking-[10px] leading-[1.3] pl-[1rem] z-10 font-[700]">
           Contact
         </h1>

@@ -37,7 +37,7 @@ const Blog = () => {
                   <span className="absolute text-center top-[1rem] left-[1rem] bg-primary-400 text-neutral-100 rounded-[.6rem] px-[.5rem] py-[.1rem]">
                     <strong className="text-[2.5rem] font-[700]">28</strong>
                     <br />
-                    <p className="text-[.8rem] font-[500]">Jan, 2023</p>
+                    <p className="text-[.8rem] font-[500]">Jan, 2024</p>
                   </span>
                 </div>
                 <div className="py-[2rem]">
@@ -50,7 +50,7 @@ const Blog = () => {
                       <span className="ml-[.5rem]">|</span>
                     </span>
                     <span className="ml-[.5rem]">
-                      28 January, 2023
+                      28 January, 2024
                       <span className="ml-[.5rem]">|</span>
                     </span>
                     <span className="ml-[.5rem]">
@@ -88,7 +88,7 @@ const Blog = () => {
                   <span className="absolute text-center top-[1rem] left-[1rem] bg-primary-400 text-neutral-100 rounded-[.6rem] px-[.5rem] py-[.1rem]">
                     <strong className="text-[2.5rem] font-[700]">20</strong>
                     <br />
-                    <p className="text-[.8rem] font-[500]">Feb, 2023</p>
+                    <p className="text-[.8rem] font-[500]">Feb, 2024</p>
                   </span>
                 </div>
                 <div className="py-[2rem]">
@@ -101,7 +101,7 @@ const Blog = () => {
                       <span className="ml-[.5rem]">|</span>
                     </span>
                     <span className="ml-[.5rem]">
-                      20 February, 2021
+                      20 February, 2023
                       <span className="ml-[.5rem]">|</span>
                     </span>
                     <span className="ml-[.5rem]">
@@ -139,7 +139,7 @@ const Blog = () => {
                   <span className="absolute text-center top-[1rem] left-[1rem] bg-primary-400 text-neutral-100 rounded-[.6rem] px-[.5rem] py-[.1rem]">
                     <strong className="text-[2.5rem] font-[700]">18</strong>
                     <br />
-                    <p className="text-[.8rem] font-[500]">Mar, 2023</p>
+                    <p className="text-[.8rem] font-[500]">Mar, 2024</p>
                   </span>
                 </div>
                 <div className="py-[2rem]">
@@ -152,7 +152,7 @@ const Blog = () => {
                       <span className="ml-[.5rem]">|</span>
                     </span>
                     <span className="ml-[.5rem]">
-                      18 March, 2023
+                      18 March, 2024
                       <span className="ml-[.5rem]">|</span>
                     </span>
                     <span className="ml-[.5rem]">
@@ -192,7 +192,7 @@ const Blog = () => {
                   <span className="absolute text-center top-[1rem] left-[1rem] bg-primary-400 text-neutral-100 rounded-[.6rem] px-[.5rem] py-[.1rem]">
                     <strong className="text-[2.5rem] font-[700]">24</strong>
                     <br />
-                    <p className="text-[.8rem] font-[500]">Mar, 2021</p>
+                    <p className="text-[.8rem] font-[500]">Mar, 2024</p>
                   </span>
                 </div>
                 <div className="py-[2rem]">
@@ -205,7 +205,7 @@ const Blog = () => {
                       <span className="ml-[.5rem]">|</span>
                     </span>
                     <span className="ml-[.5rem]">
-                      24 March, 2023
+                      24 March, 2024
                       <span className="ml-[.5rem]">|</span>
                     </span>
                     <span className="ml-[.5rem]">
@@ -245,7 +245,7 @@ const Blog = () => {
                   <span className="absolute text-center top-[1rem] left-[1rem] bg-primary-400 text-neutral-100 rounded-[.6rem] px-[.5rem] py-[.1rem]">
                     <strong className="text-[2.5rem] font-[700]">28</strong>
                     <br />
-                    <p className="text-[.8rem] font-[500]">Jan, 2023</p>
+                    <p className="text-[.8rem] font-[500]">Jan, 2024</p>
                   </span>
                 </div>
                 <div className="py-[2rem]">
@@ -258,7 +258,7 @@ const Blog = () => {
                       <span className="ml-[.5rem]">|</span>
                     </span>
                     <span className="ml-[.5rem]">
-                      24 January, 2023
+                      24 January, 2024
                       <span className="ml-[.5rem]">|</span>
                     </span>
                     <span className="ml-[.5rem]">
@@ -413,49 +413,49 @@ const Blog = () => {
                 <ul>
                   <div className="flex items-center justify-between mb-[.9rem]">
                     <Link href="#" className="capitalize text-neutral-350">
-                      july 2021
+                      july 2024
                     </Link>
                     <p className="text-neutral-350 text-[.75rem]">(9)</p>
                   </div>
                   <div className="flex items-center justify-between mb-[.9rem]">
                     <Link href="#" className="capitalize text-neutral-350">
-                      june 2021
+                      june 2024
                     </Link>
                     <p className="text-neutral-350 text-[.75rem]">(39)</p>
                   </div>
                   <div className="flex items-center justify-between mb-[.9rem]">
                     <Link href="#" className="capitalize text-neutral-350">
-                      may 2021
+                      may 2024
                     </Link>
                     <p className="text-neutral-350 text-[.75rem]">(29)</p>
                   </div>
                   <div className="flex items-center justify-between mb-[.9rem]">
                     <Link href="#" className="capitalize text-neutral-350">
-                      april 2021
+                      april 2024
                     </Link>
                     <p className="text-neutral-350 text-[.75rem]">(35)</p>
                   </div>
                   <div className="flex items-center justify-between mb-[.9rem]">
                     <Link href="#" className="capitalize text-neutral-350">
-                      march 2021
+                      march 2024
                     </Link>
                     <p className="text-neutral-350 text-[.75rem]">(22)</p>
                   </div>
                   <div className="flex items-center justify-between mb-[.9rem]">
                     <Link href="#" className="capitalize text-neutral-350">
-                      february 2021
+                      february 2024
                     </Link>
                     <p className="text-neutral-350 text-[.75rem]">(32)</p>
                   </div>
                   <div className="flex items-center justify-between mb-[.9rem]">
                     <Link href="#" className="capitalize text-neutral-350">
-                      january 2021
+                      january 2024
                     </Link>
                     <p className="text-neutral-350 text-[.75rem]">(21)</p>
                   </div>
                   <div className="flex items-center justify-between mb-[.9rem]">
                     <Link href="#" className="capitalize text-neutral-350">
-                      december 2021
+                      december 2023
                     </Link>
                     <p className="text-neutral-350 text-[.75rem]">(26)</p>
                   </div>
